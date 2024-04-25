@@ -1,4 +1,0 @@
-# netlify.toml
-[build]
-  command = "sed -i 's/%%NETLIFY_ENV_API_URL%%/$API_URL/g' script.js"
-  publish = "path-to-publish-directory"
