@@ -78,7 +78,7 @@ button {
 
 button:hover {
     background-color: #13a334; 
-
+}
 
 @keyframes fadeIn {
     from {
