@@ -2,84 +2,86 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #121212; 
+    background-color: #121212; /* Deep dark background */
     color: #fff;
     font-family: 'Arial', sans-serif;
 }
 
-
+/* Main chat container styling */
 .ui.raised.very.padded.text.container.segment.inverted {
     width: 100%;
     height: 100%;
     padding: 0;
-    background: linear-gradient(145deg, #0f1114, #1e2025); 
+    background: linear-gradient(145deg, #0f1114, #1e2025); /* Subtle gradient for depth */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border: none;
-    overflow: hidden; 
+    overflow: hidden; /* Hides overflow to maintain full screen design */
 }
 
+
+/* Form styling */
 .ui.form {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-
+/* Chat box styling */
 .ui.large.comments {
     flex-grow: 1;
     overflow-y: auto;
-    background-color: transparent;
+    background-color: transparent; /* Let the main container background show through */
     padding: 20px;
     margin: 0;
-    border-radius: 0; 
+    border-radius: 0; /* Match the futuristic full screen style */
     display: flex;
-    flex-direction: column; 
+    flex-direction: column; /* Newest messages at the bottom */
 }
-
-
+/* Chat message styling */
 .ui.message {
     background-color: #333;
     padding: 10px 20px;
     margin: 5px 0;
-    border-radius: 15px; 
-    border: 1px solid #444; 
-    color: #eee; 
-    animation: fadeIn 0.3s ease-in-out; 
+    border-radius: 15px; /* More pronounced rounded corners for messages */
+    border: 1px solid #444; /* Subtle border */
+    color: #eee; /* Light grey text for readability */
+    animation: fadeIn 0.3s ease-in-out; /* Animation for message appearance */
 }
 
-
+/* Input area styling */
 .ui.fluid.action.input {
     margin: 10px;
 }
 
 input[type="text"] {
-    background-color: #333; 
-    color: #fff;
-    border-radius: 20px; 
-    border: 1px solid #444; 
-    padding: 15px 20px; 
-    transition: background-color 0.3s;
+    background-color: #333; /* Dark input field */
+    color: #fff; /* White text for input */
+    border-radius: 20px; /* Rounded input box */
+    border: 1px solid #444; /* Matching border color */
+    padding: 15px 20px; /* Comfortable padding inside input */
+    transition: background-color 0.3s; /* Smooth transition for focus highlight */
 }
 
 input[type="text"]:focus {
-    background-color: #454545; 
-    outline: none; 
+    background-color: #454545; /* Slightly lighter background on focus */
+    outline: none; /* Remove default focus outline */
 }
 
 button {
-    background-color: #21ba45; 
+    background-color: #21ba45; /* A vibrant accent color for the send button */
     color: #ffffff;
-    border-radius: 20px; 
+    border-radius: 20px; /* Rounded button */
     padding: 15px 20px;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #13a334; 
+    background-color: #13a334; /* Darker green on hover for interaction feedback */
 }
 
+/* Keyframes for fadeIn animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -92,8 +94,8 @@ button:hover {
 }
 
 .loader {
-    border: 5px solid #f3f3f3; 
-    border-top: 5px solid #3498db; 
+    border: 5px solid #f3f3f3; /* Light grey border for the loader ring */
+    border-top: 5px solid #3498db; /* Blue border for the spinning part */
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -108,12 +110,12 @@ button:hover {
 
 .sender-name {
     font-size: 0.9em;
-    color: #bbb; 
+    color: #bbb; /* Slightly muted color for less focus on the sender's name */
     margin-bottom: 2px;
     align-self: flex-start;
 }
 
-
+/* User message container styles */
 .user-message-container {
     align-self: flex-end;
     text-align: right;
@@ -121,76 +123,76 @@ button:hover {
 }
 
 
-
+/* Assistant message container styles */
 .assistant-message-container {
     align-self: flex-start;
     text-align: left;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: flex-start; /* Align the sender name and message bubble to the left */
 }
 
 
 .message-content {
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    padding: 10px 15px; 
+    display: flex; /* Using flex to center the text */
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content for short messages */
+    padding: 10px 15px; /* Adjust padding as needed */
     border-radius: 18px;
-    margin: 4px 0; 
-    min-width: 50px; 
+    margin: 4px 0; /* Adjust margin for spacing between messages */
+    min-width: 50px; /* Set a minimum width for the bubble */
     word-wrap: break-word;
     word-break: break-word;
-    text-align: center; 
+    text-align: center; /* Center the text */
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
-
+/* User's message styles */
 .user-message-container .message-content {
-    background-color: #006D5B; 
-    color: #ffffff;
+    background-color: #006D5B; /* Futuristic teal for user messages */
+    color: #ffffff; /* White text for readability */
 }
 
 .assistant-message-container .message-content {
-    align-items: left; 
-    justify-content: left; 
-    text-align: left; 
-    background-color: #333; 
-    color: #f3f3f3; 
-    box-shadow: 0 2px 12px rgba(255, 255, 255, 0.1);
+    align-items: left; /* Vertically center the content */
+    justify-content: left; /* Horizontally center the content for short messages */
+    text-align: left; /* Center the text */
+    background-color: #333; /* Dark background for assistant messages */
+    color: #f3f3f3; /* Light color text for contrast */
+    box-shadow: 0 2px 12px rgba(255, 255, 255, 0.1); /* Subtle glow effect */
 }
 
 .message-content {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
-
+/* Input area styling */
 .ui.fluid.action.input {
-    margin: 20px; 
+    margin: 20px; /* More margin to separate input area from the chat box */
 }
 
 button {
-    background-color: #006D5B; 
+    background-color: #006D5B; /* Matching user message bubble color */
     color: #ffffff;
-    border-radius: 25px; 
+    border-radius: 25px; /* Matching input field border radius */
     padding: 15px 20px;
-    box-shadow: 0 2px 12px rgba(0, 173, 181, 0.4); 
+    box-shadow: 0 2px 12px rgba(0, 173, 181, 0.4); /* Matching shadow with glow effect */
     transition: all 0.3s;
 }
 
 button:hover {
-    background-color: #008c9e; 
+    background-color: #008c9e; /* Darker shade on hover for button */
 }
 
-
+/* Loading spinner styling */
 .loader {
     border: 5px solid #f3f3f3;
-    border-top: 5px solid #006D5B; 
+    border-top: 5px solid #006D5B; /* Matching loader color to user message bubble */
     border-radius: 50%;
     width: 40px;
     height: 40px;
     animation: spin 1s linear infinite;
-    margin: auto; 
+    margin: auto; /* Center the spinner in its container */
 }
 
 @keyframes spin {
@@ -198,6 +200,7 @@ button:hover {
     100% { transform: rotate(360deg); }
 }
 
+/* Fade-in animation for messages */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -207,5 +210,4 @@ button:hover {
         opacity: 1;
         transform: translateY(0);
     }
-}
 }
