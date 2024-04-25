@@ -5,7 +5,7 @@ let history = [];
 // let api_url = 'http://127.0.0.1:5000/v1/chat/completions';
 const cloudflare_url = '%%API_URL%%';
 const api_url = `${cloudflare_url}/v1/chat/completions`;
-
+console.log(process.env.API_URL)
 // user context info
 const userHeight = "5'9";
 const userGender = "Male";
