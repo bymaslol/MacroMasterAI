@@ -1,0 +1,211 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; 
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.ui.raised.very.padded.text.container.segment.inverted {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background: linear-gradient(145deg, #0f1114, #1e2025); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+    overflow: hidden; 
+}
+
+.ui.form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.ui.large.comments {
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: transparent;
+    padding: 20px;
+    margin: 0;
+    border-radius: 0; 
+    display: flex;
+    flex-direction: column; 
+}
+
+
+.ui.message {
+    background-color: #333;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 15px; 
+    border: 1px solid #444; 
+    color: #eee; 
+    animation: fadeIn 0.3s ease-in-out; 
+}
+
+
+.ui.fluid.action.input {
+    margin: 10px;
+}
+
+input[type="text"] {
+    background-color: #333; 
+    color: #fff;
+    border-radius: 20px; 
+    border: 1px solid #444; 
+    padding: 15px 20px; 
+    transition: background-color 0.3s;
+}
+
+input[type="text"]:focus {
+    background-color: #454545; 
+    outline: none; 
+}
+
+button {
+    background-color: #21ba45; 
+    color: #ffffff;
+    border-radius: 20px; 
+    padding: 15px 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #13a334; 
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.loader {
+    border: 5px solid #f3f3f3; 
+    border-top: 5px solid #3498db; 
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 10px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.sender-name {
+    font-size: 0.9em;
+    color: #bbb; 
+    margin-bottom: 2px;
+    align-self: flex-start;
+}
+
+
+.user-message-container {
+    align-self: flex-end;
+    text-align: right;
+    
+}
+
+
+
+.assistant-message-container {
+    align-self: flex-start;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+
+.message-content {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 10px 15px; 
+    border-radius: 18px;
+    margin: 4px 0; 
+    min-width: 50px; 
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align: center; 
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+.user-message-container .message-content {
+    background-color: #006D5B; 
+    color: #ffffff;
+}
+
+.assistant-message-container .message-content {
+    align-items: left; 
+    justify-content: left; 
+    text-align: left; 
+    background-color: #333; 
+    color: #f3f3f3; 
+    box-shadow: 0 2px 12px rgba(255, 255, 255, 0.1);
+}
+
+.message-content {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.ui.fluid.action.input {
+    margin: 20px; 
+}
+
+button {
+    background-color: #006D5B; 
+    color: #ffffff;
+    border-radius: 25px; 
+    padding: 15px 20px;
+    box-shadow: 0 2px 12px rgba(0, 173, 181, 0.4); 
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: #008c9e; 
+}
+
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #006D5B; 
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: auto; 
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MacroMaster Chat</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="ui raised very padded text container segment inverted">
+    <div class="ui form">
+        <div id="chat-box" class="ui large comments"></div>
+        <div id="loading" class="loader" style="display: none;"></div>
+        <div class="ui fluid action input">
+            <input type="text" id="user-input" placeholder="Ask MacroMaster..." autofocus />
+            <button class="ui button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
