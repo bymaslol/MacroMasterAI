@@ -4,9 +4,8 @@ let history = [];
 // i change this depending if im testing or not
 // let api_url = 'http://127.0.0.1:5000/v1/chat/completions';
 
-const cloudflare_url = 'https://butts-luther-show-devon.trycloudflare.com';
+const cloudflare_url = 'https://tri-matched-ink-preservation.trycloudflare.com';
 const api_url = `${cloudflare_url}/v1/chat/completions`;
-console.log('%%NETLIFY_ENV_API_URL%%');
 // user context info
 const userHeight = "5'9";
 const userGender = "Male";
