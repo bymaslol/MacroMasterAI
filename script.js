@@ -8,16 +8,21 @@ const cloudflare_url = 'https://websites-competitors-menus-poet.trycloudflare.co
 const api_url = `${cloudflare_url}/v1/chat/completions`;
 // user context info
 const userHeight = "5'9";
+const userAge = "22";
 const userGender = "Male";
-const userPhase = "cutting";
-const userWeight = "180";
-const userAllergies = "peanuts, soy";
+const userPhase = "trying to LOSE weight";
+const userWeight = "220";
+//const userAllergies = "peanuts, soy";
 const userDailyGoal = "1800";
 const userCurrentCal = "600";
 const userBodyFat = "22%";
+const startWeight = "230"
+const goalWeight = "200"
+const weightLossProgress = startWeight - userWeight;
+
 
 // this is the AI context string for the user
-const userContext = `This is the health context of the user, you don't have to respond to this message, just acknowledge it for future chats: The user is ${userGender}, ${userHeight} tall, ${userWeight} pounds and is ${userPhase}, User has eaten ${userCurrentCal} calories today, out of his goal of ${userDailyGoal}. The user's body fat percentage is ${userBodyFat}. Make sure the user stays on track with their goals, and doesn't go over or under their goal by too much! Try to make most answers brief, but informative and professional.`;
+const userContext = `This is the health context of the user, you don't have to respond to this message, just acknowledge it for future chats: The user is ${userGender}, ${userHeight} tall, is ${userAge} old, ${userWeight} pounds and is currently ${userPhase}, User has eaten ${userCurrentCal} calories today, out of his goal of ${userDailyGoal}. The users starting weight was ${startWeight}, and their goal weight is ${goalWeight}. The user's body fat percentage is ${userBodyFat}. Make sure the user stays on track with their goals, and doesn't go over or under their goal by too much! Try to make most answers brief, but informative and professional.`;
 history.push({"role": "user", "content": userContext});
 
 function updateChatBox(message, from) {
