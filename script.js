@@ -17,7 +17,7 @@ const userCurrentCal = "600";
 const userBodyFat = "22%";
 
 // this is the AI context string for the user
-const userContext = `This is the health context of the user, you don't have to respond to this message, just acknowledge it for future chats: The user is ${userGender}, ${userHeight} tall, ${userWeight} pounds and is ${userPhase}, with the following allergies: ${userAllergies}. User has eaten ${userCurrentCal} calories today, out of his goal of ${userDailyGoal}. The user's body fat percentage is ${userBodyFat}. Make sure the user stays on track with their goals, and doesn't go over or under their goal by too much! Try to make most answers brief, but informative and professional. Also, make sure you watch out and make sure the user doesn't consume or get suggested anything they are allergic to, if you see them try to use or consume an ingredient they are allergic to, warn them and advise against it, and suggest a substitute.`;
+const userContext = `This is the health context of the user, you don't have to respond to this message, just acknowledge it for future chats: The user is ${userGender}, ${userHeight} tall, ${userWeight} pounds and is ${userPhase}, User has eaten ${userCurrentCal} calories today, out of his goal of ${userDailyGoal}. The user's body fat percentage is ${userBodyFat}. Make sure the user stays on track with their goals, and doesn't go over or under their goal by too much! Try to make most answers brief, but informative and professional.`;
 history.push({"role": "user", "content": userContext});
 
 function updateChatBox(message, from) {
