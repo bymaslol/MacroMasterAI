@@ -4,7 +4,7 @@ let history = [];
 // i change this depending if im testing or not
 // let api_url = 'http://127.0.0.1:5000/v1/chat/completions';
 
-const cloudflare_url = 'https://websites-competitors-menus-poet.trycloudflare.com';
+const cloudflare_url = 'https://performing-compute-demographic-chi.trycloudflare.com';
 const api_url = `${cloudflare_url}/v1/chat/completions`;
 // user context info
 const userName = "John Doe";
